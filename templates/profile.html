@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+<section>
+    <h2>My Profile</h2>
+    <article>
+<p>Your account details are below:</p>
+<table>
+    <tr>
+        <td>Username:</td>
+        <td>{{ members.username }}</td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>{{ members.email }}</td>
+    </tr>
+    <tr>
+        <td>Name:</td>
+        <td>{{ members.firstname }}&nbsp;{{ members.lastname }}</td>
+    </tr>
+    <tr>
+        <td>Register Date:</td>
+        <td>{{ members.register_date}}</td>
+    </tr>
+</table>
+<br>
+<br>
+        <a class="btn btn-success" href="#">Edit</a>
+    </article>
+</section>
+    {% endblock %}

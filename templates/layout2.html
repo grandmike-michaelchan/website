@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Plane Trader</title>
+        {%include "includes/_messages.html" %}
+        <div class="banner">
+            <a  href="{{ url_for('index') }}">
+                <img src="../static/img/Header.png" width="410" height="80">
+            </a>
+        </div>
+    </head>
+    <body>      
+        <main>
+            {% block body %}
+            {% endblock %}
+        <div class="footer">
+          <p>Copyright &copy; 2021 Plane Trader.  All Right Reserved</p>
+        </div>
+        {% include "includes/_scrolltotop.html" %}
+    </body>
+</html>

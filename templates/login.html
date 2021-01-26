@@ -1,0 +1,22 @@
+{% extends "layout2.html" %}
+{% block body %}
+<div class="loginbg-img">
+    <form class="logincontainer" action="" method="POST">
+      <h1>Login</h1>
+            <label for="text"><b>Username</b></label>
+            <input type="text" name="Username" class="form-control" value={{request.form.username}}>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="Password" class="form-control" value={{request.form.password}}>
+      <button type="submit" class="btn1">Login</button>
+      <hr>
+      <div class="registermsg">
+          <p>Become a new member</p>
+      </div>
+      <div class="registerbtn">
+        <a href="{{ url_for('register') }}" class="btn3">Register</a>
+      </div>
+    </form>
+  </div>
+
+
+{% endblock %}

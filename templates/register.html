@@ -1,0 +1,41 @@
+{% extends "layout2.html" %}
+{% block body %}
+<div class="registerbg-img">
+
+      {% from "includes/_formhelpers.html" import render_field %}
+      <form action="#" class="registercontainer" method="POST" action="">
+              <h1>Create Account</h1>
+            <div class="firstname">
+                {{ render_field(form.firstname, class="form-control")}}
+            </div>
+            <div class="lastname">
+              {{ render_field(form.lastname, class="form-control")}}
+            </div>
+            <div class="form-group">
+            {{ render_field(form.email, class="form-control")}}
+            </div>
+            <div class="form-group">
+            {{ render_field(form.phone, class="form-control")}}
+            </div>
+            <div class="form-group">
+            {{ render_field(form.username, class="form-control")}}
+            </div>
+            <div class="form-group">
+            {{ render_field(form.password, class="form-control")}}
+            </div>
+            <div class="form-group">
+            {{ render_field(form.confirm, class="form-control")}}
+          </div>
+      <input type="submit" class="btn1" value="Register"></button>
+      <hr>
+      <div class="loginmsg">
+          <p>Already have an account</p>
+      </div>
+      <div class="loginbtn">
+        <a href="{{ url_for('login') }}" class="btn2" >Login</a>
+      </div>
+    </form>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{{ url_for('products') }}">Products</a></li>
+    <li class="breadcrumb-item active">Details</li>
+  </ol>
+  <section>
+    <h2>Air Traffic Control 4</h2>
+    <article>
+    </article>
+    </section>
+    <section>
+      <h2>Tech Spec</h2>
+      <article>
+      <table class="table table-hover">
+          <tbody>
+              <th scope="row">OS</th>
+              <td>64 bits Window 8.1 / 10</td>
+          </tr>
+          <tr>
+              <th scope="row">CPU</th>
+              <td>2.4GHz or above</td>
+          </tr>
+          <tr>
+              <th scope="row">RAM</th>
+              <td>8GB or above</td>
+          </tr>
+          <tr>
+              <th scope="row">Storage Space</th>
+              <td>6GB or above</td>
+          </tr>
+          <tr>
+              <th scope="row">Display card RAM</th>
+              <td>1GB or above</td>
+          </tr>
+          <tr>
+              <th scope="row">Screen Resolution</th>
+              <td>1366*768</td>
+          </tr>
+          <tr>
+              <th scope="row">Other requirement</th>
+              <td>DirectX9 Compatible Video Card</td>
+          </tr>
+          <tr>
+              <th scope="row"></th>
+              <td>DirectX Compatible Audio Card</td>
+          </tr>
+          </tbody>
+      </table>
+
+      </article>
+  </section>
+{% include "includes/_scrolltotop.html" %}
+{% endblock %}
